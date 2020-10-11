@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
 
-/* grey: 859695
-medium grey: E0DFDB*/
+/* almost black: 3D423E*/
+/* almost white : #fbf5e-6 */
 * {
   margin: 0;
   padding: 0;
@@ -9,14 +9,14 @@ medium grey: E0DFDB*/
 }
 
 body {
-  background-color: #859695;
+  background-color: #1e144b;
   font-family: verdana, arial, sans-serif;
 }
 
 /* ======== Setting header ========= */
 section.header_lrg {
-  background-color: #e0dfdb;
-  color: #859695;
+  background-color: #a7c9c7;
+  color: #1e144b;
   width: 100%;
   height: 50vh;
   text-align: center;
@@ -35,6 +35,7 @@ header h1 {
 header h2 {
   font-family: "Montserrat";
   font-size: 200%;
+  font-weight: lighter;
   text-transform: uppercase;
 }
 
@@ -46,8 +47,8 @@ nav {
 }
 nav a:link {
   width: 100%;
-  background-color: #e0dfdb;
-  color: #859695;
+  background-color: #a7c9c7;
+  color: #1e144b;
   padding-top: 2%;
   padding-bottom: 2%;
   font-weight: bold;
@@ -56,23 +57,52 @@ nav a:link {
 }
 
 nav a:visited {
-  color: #859695;
+  color: #1e144b;
 }
 
 nav a:hover {
-  color: #859695;
-  background-color: #fbe4d7;
+  color: #1e144b;
+  background-color: #fbf5e6;
 }
 
 a.active {
-  background-color: #fbe4d7;
+  background-color: #fbf5e6;
 }
 
 section.title {
-  background-color: #fbe4d7;
+  background-color: #fbf5e6;
   padding: 3%;
-  color: #859695;
+  color: #1e144b;
   font-size: 200%;
   text-transform: capitalize;
   font-weight: bold;
+}
+
+section.article {
+  background-color: #fbf5e6;
+  color: #1e144b;
+  font-size: 100%
+  padding: 3%;
+  display: flex;
+}
+.text {
+  width: 200vw;
+}
+article h1 {
+  color: #fff;
+}
+figure {
+  width: 100vw;
+}
+
+figure img {
+  width: 100%;
+  position: relative;
+}
+
+figcaption {
+  font-style: oblique;
+  text-align: left;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
 }
