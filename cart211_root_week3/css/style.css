@@ -1,0 +1,122 @@
+/*  * {} is used as a universal selector. The values will be applied to everything in this file */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: coral;
+  font-family: verdana, arial, sans-serif;
+}
+/* can use absolute value (px) or relative value (% of browser window) to set size (font, padding, margin, ...) */
+header {
+  background-color: aquamarine;
+  color: azure;
+  padding: 2% 5%;
+}
+/*specificity targets elements inside of parents : instead of h1 {} (will be applied to all h1, problematic)
+-> header (parent) h1 (child) {} (only applies to h1 in header. equivalent push() pop())*/
+header h1 {
+  font-size: 250%;
+  text-transform: uppercase;
+}
+
+header h2 {
+  font-size: 125%;
+  font-family: times, serif;
+  font-style: oblique;
+}
+
+nav {
+  background-color: beige;
+}
+
+nav a:link {
+  background-color: beige;
+  color: cadetblue;
+  font-weight: bold;
+  padding: 2% 10%;
+  /* accomodate padding on the naviguator section (if the section is absolutely too small for the content elements) */
+  display: inline-block;
+  /* remove underline link */
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: cadetblue;
+}
+
+nav a:hover {
+  color: beige;
+  background-color: aquamarine;
+}
+/* to set the active links to a certain value (see link a. in index.html) */
+a.active {
+  color: beige;
+  background-color: aquamarine;
+}
+article {
+  padding: 0.5% 2%;
+}
+/* specifically adressing the ARTICLE h1 */
+article h1 {
+  font-size: 42px;
+  text-transoform: capitalize;
+  margin-bottom: 5px;
+}
+
+article h2 {
+  font-size: 20px;
+  text-transoform: capitalize;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+article p {
+  margin-bottom: 1%;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* classes start with a . and can be used many times in a page; IDs can only be used once */
+.pullQuote {
+  padding: 2%;
+  background-color: coral;
+  color: beige;
+  font-size: 34px;
+  text-align: center;
+  font-style: italic;
+  border-top: solid 3px aquamarine;
+  border-bottom: solid 3px aquamarine;
+}
+
+figure {
+  margin: 2%;
+  /* padding-left: 10%;
+  padding-right: 10%; */
+  width: 75%;
+  float: left;
+}
+figure img {
+  /* use % when you want a responsive img */
+  width: 100%;
+  position: relative;
+}
+figcaption {
+  font-style: oblique;
+  font-weight: bold;
+  color: cadetblue;
+  text-align: center;
+}
+footer {
+  background-color: aquamarine;
+  margin-top: 10%;
+  padding: 4%;
+  font-size: 18px;
+  /* what does it change? to be discussed */
+  line-height: 14px;
+  font-style: oblique;
+  font-weight: bold;
+  color: cadetblue;
+  text-align: center;
+}

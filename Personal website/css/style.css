@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
 
 /* almost black: 3D423E*/
 /* almost white : #fbf5e-6 */
@@ -9,8 +10,8 @@
 }
 
 body {
-  background-color: #1e144b;
-  font-family: verdana, arial, sans-serif;
+  background-color: #a7c9c7;
+  font-family: "arvo";
 }
 
 /* ======== Setting header ========= */
@@ -42,6 +43,7 @@ header h2 {
 /* ========= Setting navigation ========  */
 nav {
   width: 100%;
+
   display: inline-flex;
   justify-content: space-between;
 }
@@ -51,7 +53,8 @@ nav a:link {
   color: #1e144b;
   padding-top: 2%;
   padding-bottom: 2%;
-  font-weight: bold;
+  font-family: "Montserrat";
+  font-size: 135%;
   text-align: center;
   text-decoration: none;
 }
@@ -76,14 +79,19 @@ section.title {
   font-size: 200%;
   text-transform: capitalize;
   font-weight: bold;
+  text-indent: 50px;
 }
 
 section.article {
   background-color: #fbf5e6;
   color: #1e144b;
-  font-size: 100%
+  font-size: 120%;
   padding: 3%;
+  line-height: 50px;
   display: flex;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-indent: 50px;
 }
 .text {
   width: 200vw;
@@ -92,7 +100,7 @@ article h1 {
   color: #fff;
 }
 figure {
-  width: 100vw;
+  width: 75 vw;
 }
 
 figure img {
@@ -102,7 +110,12 @@ figure img {
 
 figcaption {
   font-style: oblique;
-  text-align: left;
+  line-height: 20px;
+  margin-right: 60px;
+  margin-left: 0;
+  margin-top: 5px;
+  margin-bottom: 0;
+  text-align: right;
   /* display: flex; */
   /* flex-wrap: wrap; */
 }

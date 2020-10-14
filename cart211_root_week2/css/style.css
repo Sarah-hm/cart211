@@ -1,0 +1,47 @@
+/* This is a comment :) */
+body {
+  background-color: aquamarine;
+  font-family: "gotham", helvetica, verdana, sans-serif;
+}
+
+h1 {
+  font-size: 72px;
+  color: #FF8000;
+  text-transform: full-width;
+  text-transform: uppercase;
+  line-height: 10px;
+}
+
+h2 {
+  font-family: times, georgia, serif;
+  font-size: 42px;
+  color: #FF8000;
+  font-style: italic;
+}
+
+p {
+  font-size: 14px;
+  line-height: 15px;
+}
+
+/* pseudo class must be in this order : link, visited, hover, active (Las Vegas Has Actions) */
+/* hover state */
+a:link {
+  color: palevioletred;
+  text-transform: uppercase;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-stretch: ultra-expanded;
+}
+
+a:visited {
+  color: pink
+}
+
+a:hover {
+  color: fuchsia
+}
+
+a:active {
+  color: #333
+}

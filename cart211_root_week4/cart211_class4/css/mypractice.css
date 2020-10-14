@@ -1,0 +1,106 @@
+/* link to import fonts (from google fonts) */
+
+@import "https://fonts.googleapis.com/css?family=Passion+One|Poiret+One";
+
+* {
+  margin: 0;
+  padding: 0;
+  /* ALWAYS include box-sizing:border-box to our universal selector */
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+section.header_lrg {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  /* align-items for only one object, align-content for multiple objects */
+  align-items: center;
+}
+
+.header_lrg header {
+  text-align: center;
+}
+
+.header_lrg h2 {
+  font-family: "Poiret One", cursive;
+  font-size: 2em;
+  line-height: 1em;
+  text-transform: capitalize;
+  color: #eee;
+  font-weight: normal;
+}
+
+.header_lrg h1 {
+  font-family: "Passion One", cursive;
+  font-size: 5em;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+section.right {
+  background: #ff2a06;
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  justify-content: flex-end;
+  padding: 2%;
+  align-items: flex-start;
+}
+
+.right article {
+  background: #fff;
+  width: 30%;
+  padding: 1.4em;
+}
+/* ======== 3 column section =========  */
+
+section.col3x {
+  background-color: blanchedalmond;
+  display: flex;
+  /* to be able to wrap the pictures when making the window small af  */
+  /* flex-flow: row wrap; */
+}
+
+.col3x figure {
+  background-color: #333;
+  /* determine how figure (images) are going to be sized */
+  flex-grow: 1;
+}
+
+.col3x figcaption {
+  padding: 1%;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+figure img {
+  /* so all pictures show in one row without having to scroll right */
+  width: 100%;
+}
+
+section.col3xsm {
+  background-color: #333;
+  padding: 1.5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+section.col3xsm figure {
+  justify-content: space-around;
+  padding: 2%;
+}
+
+.logo {
+  width: 50px;
+  /* can also use fixed position, as this will follow you when you scroll */
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
