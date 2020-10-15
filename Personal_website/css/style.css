@@ -41,13 +41,13 @@ header h2 {
 }
 
 /* ========= Setting navigation ========  */
-nav {
+nav.upperNav {
   width: 100%;
 
   display: inline-flex;
   justify-content: space-between;
 }
-nav a:link {
+nav.upperNav a:link {
   width: 100%;
   background-color: #a7c9c7;
   color: #1e144b;
@@ -59,16 +59,16 @@ nav a:link {
   text-decoration: none;
 }
 
-nav a:visited {
+nav.upperNav a:visited {
   color: #1e144b;
 }
 
-nav a:hover {
+nav.upperNav a:hover {
   color: #1e144b;
   background-color: #fbf5e6;
 }
 
-a.active {
+nav.upperNav a.active {
   background-color: #fbf5e6;
 }
 
@@ -90,7 +90,7 @@ section.article {
   line-height: 50px;
   display: flex;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   text-indent: 50px;
 }
 .text {
@@ -120,6 +120,39 @@ figcaption {
   /* flex-wrap: wrap; */
 }
 
-section.button {
-  font-family: times;
+nav.buttonNav {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+nav.buttonNav a:link {
+  width: 100%;
+  background-color: #1e144b;
+  color: #fbf5e6;
+  margin: 40px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-family: "Montserrat";
+  font-size: 100%;
+  text-align: center center;
+  text-decoration: underline;
+  /* How to make shadow rectangle taken from :   /* https://www.thesitewizard.com/css/box-shadow.shtml */
+  border: 3px solid #fbf5e6;
+  border-radius: 20px;
+  box-shadow: 5px 6px #808080;
+}
+
+nav.buttonNav a:hover {
+  background-color: #a7c9c7;
+  color: #1e144b;
+}
+nav.buttonNav a:visited {
+  color: #fbf5e6;
+  background-color: #1e144b;
+}
+
+nav.buttonNav a.active {
+  background-color: #fbf5e6;
 }
