@@ -119,3 +119,7 @@ figcaption {
   /* display: flex; */
   /* flex-wrap: wrap; */
 }
+
+section.button {
+  font-family: times;
+}
