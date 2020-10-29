@@ -8,6 +8,8 @@
 
 section.parent {
   background-color: red;
+  color: #fff;
+  border: 20px solid #fff;
   height: 100vh;
 
   display: grid;
