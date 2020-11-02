@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
+/* Charcoal : #3E3C41
+orange red: #E83825
+cream: #F7EEE0;  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7eee0;
+  font-family: serif;
+}
+
+/* ================ Home page ================ */
+
+/* The 1 header */
+section.header_lrg {
+  background-color: #e83825;
+  color: #3e3c41;
+  width: 100%;
+  height: 90vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_lrg header {
+  display: flex;
+  align-items: baseline;
+}
+
+.header_lrg h1 {
+  grid-column: 3;
+  grid-row: 1;
+  align-items: center;
+  font-family: "Montserrat";
+  font-size: 200%;
+  text-transform: uppercase;
+  /* align-self: center; */
+}
+
+nav.the1 a:link {
+  font-family: "Montserrat";
+  font-size: 4000%;
+  font-weight: lighter;
+  text-transform: uppercase;
+  /* align-self: center; */
+}
+
+nav.the1 a:visited {
+  color: #3e3c41;
+  text-decoration: none;
+}
+
+nav.the1 a:link {
+  color: #3e3c41;
+  text-decoration: none;
+}
+
+nav.the1 a:link {
+  color: #3e3c41;
+  text-decoration: none;
+}
+
+/* About section */
+
+section.about {
+  height: 10vh;
+  font-size: 300%;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #e83825;
+  color: #e83825;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5%;
+  font-family: "Montserrat";
+}
+
+nav.aboutLink a:link {
+  text-decoration: none;
+  color: #e83825;
+}
+
+nav.aboutLink a:visited {
+  text-decoration: none;
+  color: #e83825;
+}
+
+section.about:hover {
+  transition: 2s;
+  background-color: #3e3c41;
+}
+nav.aboutLink a:hover {
+  transition: 2s;
+  text-decoration: none;
+  background-color: #3e3c41;
+  color: #e83825;
+}
+nav.aboutLink a.active {
+  text-decoration: none;
+  color: #e83825;
+}
+
+/* ========== About page (why and how) ===========  */
+
+.header_medium {
+  background-color: #e83825;
+  color: #3e3c41;
+  width: 100%;
+  height: 25vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_medium h2 {
+  grid-column: 3;
+  grid-row: 1;
+  align-items: center;
+  font-family: "Montserrat";
+  font-size: 400%;
+  text-transform: uppercase;
+}
+
+nav.aboutNav {
+  width: 100%;
+  background-color: #e83825;
+  display: inline-flex;
+}
+
+nav.aboutNav a:link {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 175%;
+  padding: 1.5%;
+  text-decoration: none;
+  font-family: "Montserrat";
+  background-color: #e83825;
+  color: #3e3c41;
+}
+
+nav.aboutNav a:visited {
+  text-decoration: none;
+  background-color: #e83825;
+  color: #3e3c41;
+}
+
+nav.aboutNav a:hover {
+  transition: 0.5s;
+  text-decoration: none;
+  background-color: #f7eee0;
+  color: #3e3c41;
+}
+
+nav.aboutNav a.active {
+  text-decoration: none;
+  background-color: #f7eee0;
+  color: #3e3c41;
+}
+/* ===========About How it's done ============== */
+
+/* ============== The 1 : Static Tiffany Morrison Page ======== */
+
+section.staticPage {
+  /* width: 100%;
+  height: 100vh;
+  max-width: 1200px; */
+  background: url(../images/StaticPage-06.jpg) no-repeat fixed center center;
+  background-size: contain;
+}

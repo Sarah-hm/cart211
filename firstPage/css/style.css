@@ -25,28 +25,37 @@ section.header_lrg {
   align-items: center;
 }
 
-header h1 {
+.header_lrg header {
+  display: flex;
+  align-items: baseline;
+}
+
+.header_lrg h1 {
   grid-column: 3;
   grid-row: 1;
   align-items: center;
   font-family: "Montserrat";
   font-size: 200%;
   text-transform: uppercase;
+  /* align-self: center; */
 }
 
-header h2 {
+.header_lrg h2 {
   font-family: "Montserrat";
   font-size: 600%;
   font-weight: lighter;
   text-transform: uppercase;
+  /* align-self: center; */
 }
 
 section.map {
   width: 100%;
+  max-width: 1200px;
   height: 100vh;
   background-color: #3e3c41;
+  /* position: fixed; */
   background: url(../images/mapUpsideDown-01.png) no-repeat fixed center center;
-  background-size: cover;
+  background-size: contain;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -69,5 +78,19 @@ article {
 .Toronto:hover {
   width: 4vmax;
   height: 4vmax;
+  transition: 0.5s;
+}
+
+.victoria {
+  grid-column: 27;
+  grid-row: 2;
+  width: 0.5vmax;
+  height: 0.5vmax;
+  background: #e83825;
+}
+
+.victoria:hover {
+  width: 2vmax;
+  height: 2vmax;
   transition: 0.5s;
 }
