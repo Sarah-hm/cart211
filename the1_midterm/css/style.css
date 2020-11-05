@@ -194,6 +194,7 @@ section.essay {
   grid-gap: 20px;
   grid-column-gap: 50px;
   padding-bottom: 3%;
+  line-height: 25px;
 }
 article {
   color: #3e3c41;
