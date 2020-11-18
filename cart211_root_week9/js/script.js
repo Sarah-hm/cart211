@@ -16,7 +16,7 @@ let pictureMoved = true;
 next.onclick = function() {
   let textInput = document.querySelector('#inputText').value
 
-  if (textInput <= 1 || textInput >= 10) {
+  if (textInput <= 0 || textInput >= 10) {
     textOutput.textContent = `You think you're funny? I said 1 to 10. You're wrong.`
   } else if (textInput >= 5) {
     textOutput.textContent = `Guess what? Still wrong.`
