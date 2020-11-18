@@ -51,6 +51,7 @@ picture.onclick = function() {
 function articleBig() {
   article.style.left = '50%'
   article.style.top = '50%'
+  article.style.transform = 'rotate(0deg)'
   article.style.transform = 'scale(2)'
   article.style.zIndex = 1
   articleMoved = true
