@@ -1,0 +1,562 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
+@font-face {
+  font-family: "Atkinson";
+  src: url("../fonts/Atkinson-Hyperlegible-Regular-102.eot");
+  src: url("../fonts/Atkinson-Hyperlegible-Regular-102a.woff2") format("woff2"),
+    url("../fonts/Atkinson-Hyperlegible-Regular-102.woff") format("woff"),
+    url("../fonts/Atkinson-Hyperlegible-Regular-102.ttf") format("truetype"),
+    url("../fonts/Atkinson-Hyperlegible-Regular-102.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Charcoal : #3E3C41
+orange red: #E83825
+cream: #F7EEE0;  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7eee0;
+  font-family: "Atkinson";
+}
+
+/* ================ Home page ================ */
+
+/* The 1 header */
+section.header_lrg {
+  background-color: #e83825;
+  color: #3e3c41;
+  width: 100%;
+  height: 90vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_lrg header {
+  display: flex;
+  align-items: baseline;
+}
+
+.header_lrg h1 {
+  grid-column: 3;
+  grid-row: 1;
+  align-items: center;
+  font-family: "Montserrat";
+  font-size: 200%;
+  text-transform: uppercase;
+  /* align-self: center; */
+}
+
+nav.the1 a:link {
+  font-family: "Montserrat";
+  font-size: 4000%;
+  font-weight: lighter;
+  text-transform: uppercase;
+  /* align-self: center; */
+}
+
+nav.the1 a:visited {
+  color: #3e3c41;
+  text-decoration: none;
+}
+
+nav.the1 a:link {
+  color: #3e3c41;
+  text-decoration: none;
+}
+
+nav.the1 a:link {
+  color: #3e3c41;
+  text-decoration: none;
+}
+
+/* About section */
+
+section.about {
+  height: 10vh;
+  font-size: 300%;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #e83825;
+  color: #e83825;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5%;
+  font-family: "Montserrat";
+}
+
+nav.aboutLink a:link {
+  text-decoration: none;
+  color: #e83825;
+}
+
+nav.aboutLink a:visited {
+  text-decoration: none;
+  color: #e83825;
+}
+
+section.about:hover {
+  transition: 2s;
+  background-color: #3e3c41;
+}
+nav.aboutLink a:hover {
+  transition: 2s;
+  text-decoration: none;
+  background-color: #3e3c41;
+  color: #e83825;
+}
+nav.aboutLink a.active {
+  text-decoration: none;
+  color: #e83825;
+}
+
+/* ========== About page (why and how) ===========  */
+
+.header_medium {
+  background-color: #e83825;
+  color: #3e3c41;
+  width: 100%;
+  height: 25vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_medium h2 {
+  grid-column: 3;
+  grid-row: 1;
+  align-items: center;
+  font-family: "Montserrat";
+  font-size: 400%;
+  text-transform: uppercase;
+}
+
+nav.aboutNav {
+  width: 100%;
+  background-color: #e83825;
+  display: inline-flex;
+}
+
+nav.aboutNav a:link {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 175%;
+  padding: 1.5%;
+  text-decoration: none;
+  font-family: "Montserrat";
+  background-color: #e83825;
+  color: #3e3c41;
+}
+
+nav.aboutNav a:visited {
+  text-decoration: none;
+  background-color: #e83825;
+  color: #3e3c41;
+}
+
+nav.aboutNav a:hover {
+  transition: 0.5s;
+  text-decoration: none;
+  background-color: #f7eee0;
+  color: #3e3c41;
+}
+
+nav.aboutNav a.active {
+  text-decoration: none;
+  background-color: #f7eee0;
+  color: #3e3c41;
+}
+/* ===========About WHY it's done post-nav ============== */
+
+section.title {
+  font-family: "Montserrat";
+  color: #3e3c41;
+  padding: 5%;
+  font-size: 200%;
+  letter-spacing: 2px;
+}
+
+section.essay {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-column-gap: 50px;
+  padding-bottom: 3%;
+  line-height: 25px;
+}
+article {
+  color: #3e3c41;
+  font-family: "Atkinson";
+}
+
+.a1 {
+  grid-column: 3/5;
+  grid-row: 1;
+  font-size: 175%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.a2 {
+  grid-column: 2/5;
+  grid-row: 2/4;
+  text-align: right;
+}
+
+.a3 {
+  grid-column: 5/7;
+  grid-row: 3;
+  font-size: 175%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.a4 {
+  grid-column: 5/8;
+  grid-row: 4/7;
+  text-align: left;
+}
+.a5 {
+  grid-column: 3/5;
+  grid-row: 6;
+  font-size: 175%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.a6 {
+  grid-column: 2/5;
+  grid-row: 7/10;
+  text-align: right;
+}
+.a7 {
+  grid-column: 5/7;
+  grid-row: 9;
+  font-size: 175%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.a8 {
+  grid-column: 5/8;
+  grid-row: 10/12;
+  text-align: left;
+}
+
+/* Pdf version button */
+.a9 {
+  grid-column: 4/6;
+  grid-row: 12;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center center;
+  font-family: "Atkinson";
+  font-size: 225%;
+  padding: 4%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  border: 3px solid #e83825;
+  border-radius: 20px;
+  box-shadow: 5px 6px #808080;
+  background-color: #f7eee0;
+  color: #e83825;
+}
+
+nav.a9 a:link {
+  text-decoration: none;
+  color: #e83825;
+}
+nav.a9 a:visited {
+  text-decoration: none;
+  color: #e83825;
+}
+nav.a9 a:hover {
+  text-decoration: none;
+}
+nav.a9 a.active {
+  text-decoration: none;
+}
+
+/* ===========About HOW it's done post-nav ============== */
+
+section.wireframe {
+  width: 100%;
+  padding: 4%;
+  display: grid;
+  grid-gap: 50px;
+  grid-row-gap: 70px;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  font-size: 100%;
+  color: #3e3c41;
+  justify-content: center;
+}
+/*  Homepage */
+figure.homepageImg {
+  transform: scale(90%);
+  grid-row: 1;
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+
+figure.homepageImg:hover {
+  transform: scale(1.25);
+}
+
+article.homepageExp {
+  grid-row: 1;
+  grid-column: 3/5;
+  font-size: 150%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  display: flex;
+  align-items: center;
+}
+
+/* About why */
+figure.aboutWhyImg {
+  transform: scale(90%);
+  grid-row: 2;
+  grid-column: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+
+figure.aboutWhyImg:hover {
+  transform: scale(1.25);
+}
+
+article.aboutWhyTxt {
+  grid-row: 2;
+  grid-column: 2/4;
+  font-size: 150%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+}
+
+/* About how */
+
+figure.aboutHowImg {
+  transform: scale(90%);
+  grid-row: 3;
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+
+figure.aboutHowImg:hover {
+  transform: scale(1.25);
+}
+
+article.aboutHowTxt {
+  grid-row: 3;
+  grid-column: 3/5;
+  font-size: 150%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  display: flex;
+  align-items: center;
+}
+
+/* == Brief webpage == */
+
+/* First section */
+figure.briefImg1 {
+  transform: scale(90%);
+  grid-row: 4;
+  grid-column: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+
+figure.briefImg1:hover {
+  transform: scale(1.25);
+}
+
+article.briefTxt1 {
+  grid-row: 4;
+  grid-column: 2/4;
+  font-size: 150%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+
+/* second section */
+
+figure.briefImg2 {
+  transform: scale(90%);
+  grid-row: 5;
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+
+figure.briefImg2:hover {
+  transform: scale(1.25);
+}
+
+article.briefTxt2 {
+  grid-row: 5;
+  grid-column: 3/5;
+  font-size: 150%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  display: flex;
+  align-items: center;
+}
+
+/* stylesheet/ moodboard */
+
+figure.moodboard {
+  width: 100%;
+  height: 100vh;
+  background-color: #f7eee0;
+  background: url(../images/wireframe-moodboard.png) no-repeat fixed center
+    center;
+  background-size: contain;
+
+  /* transform: scale(1); */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+/* ============== Tiffany Morrison ======== */
+
+section.brief {
+  background-color: #3e3c41;
+  width: 100%;
+  height: 100vh;
+  padding: 5%;
+}
+
+.doc {
+  width: 40%;
+  display: flex;
+  transform: scale(70%);
+  transition: all 1s;
+}
+
+.d1 {
+  transform: rotate(25deg) translate(-50%, -50%);
+  position: absolute;
+  left: 40%;
+  top: 45%;
+}
+
+.button {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  transition: all 0.4s;
+  border: 2px solid #e83825;
+  color: #e83825;
+  background-color: #3e3c41;
+}
+article.doc a:link {
+  box-shadow: 0 0 0 0 #e83825;
+  text-decoration: none;
+  color: #e83825;
+}
+article.doc a:visited {
+  box-shadow: 0 0 0 0 #e83825;
+  text-decoration: none;
+  color: #e83825;
+}
+article.doc a:hover {
+  box-shadow: 0 0.75em 0 0 #e83825;
+  text-decoration: none;
+}
+article.doc a.active {
+  box-shadow: 0 0.75em 0 0 #e83825;
+  text-decoration: none;
+}
+
+.zoom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2, 2) rotate(0deg);
+  padding: 1.25em 2em;
+  border-radius: 0.75em;
+}
+/* .d2 {
+  transform: rotate(25deg);
+  position: absolute;
+  left: 40%;
+  top: 15%;
+}
+.d3 {
+  transform: rotate(60deg);
+  position: absolute;
+  left: 15%;
+  top: 20%;
+}
+.d4 {
+  transform: rotate(-35);
+  position: absolute;
+  left: 70%;
+  top: 40%;
+}
+.d5 {
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 60%;
+  top: 15%;
+}
+.d6 {
+  transform: rotate(-16deg);
+  position: absolute;
+  left: 80%;
+  top: 75%;
+}
+.d7 {
+  transform: rotate(5deg);
+  position: absolute;
+  left: 35%;
+  top: 75%;
+}
+.d8 {
+  transform: rotate(29deg);
+  position: absolute;
+  left: 20%;
+  top: 60%;
+} */

@@ -15,8 +15,7 @@
   left: 70%;
   transition: all 1.5s;
   z-index: -1;
-  transform: scale(1);
-  transform: rotate(20deg);
+  transform: scale(1) rotate(20deg);
 }
 
 #doc2 {
