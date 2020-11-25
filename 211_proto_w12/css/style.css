@@ -480,6 +480,7 @@ section.brief {
 .button {
   z-index: 1;
   position: absolute;
+  width: 25%;
   display: flex;
   cursor: pointer;
   text-align: center;
