@@ -1,17 +1,60 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+/* Import Hatkinson Hyperlegible font family : normal, bold, italic, italicBold  */
 
+/* Normal */
 @font-face {
-  font-family: "Atkinson";
+  font-family: "Atkinson normal";
+  font-style: normal;
+  font-weight: normal;
   src: url("../fonts/Atkinson-Hyperlegible-Regular-102.eot");
   src: url("../fonts/Atkinson-Hyperlegible-Regular-102a.woff2") format("woff2"),
     url("../fonts/Atkinson-Hyperlegible-Regular-102.woff") format("woff"),
     url("../fonts/Atkinson-Hyperlegible-Regular-102.ttf") format("truetype"),
     url("../fonts/Atkinson-Hyperlegible-Regular-102.svg") format("svg");
-  font-weight: normal;
-  font-style: normal;
 }
 
+/* bold */
+@font-face {
+  font-family: "Atkinson bold";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/Atkinson-Hyperlegible-Bold-102.eot");
+  src: url("../fonts/Atkinson-Hyperlegible-Bold-102a.woff2") format("woff2"),
+    url("../fonts/Atkinson-Hyperlegible-Bold-102.woff") format("woff"),
+    url("../fonts/Atkinson-Hyperlegible-Bold-102.ttf") format("truetype"),
+    url("../fonts/Atkinson-Hyperlegible-Bold-102.svg") format("svg");
+}
+
+/* italic */
+@font-face {
+  font-family: "Atkinson italic";
+  font-style: italic;
+  font-weight: normal;
+  src: url("../fonts/Atkinson-Hyperlegible-Italic-102.eot");
+  src: url("../fonts/Atkinson-Hyperlegible-Italic-102a.woff2") format("woff2"),
+    url("../fonts/Atkinson-Hyperlegible-Italic-102.woff") format("woff"),
+    url("../fonts/Atkinson-Hyperlegible-Italic-102.ttf") format("truetype"),
+    url("../fonts/Atkinson-Hyperlegible-Italic-102.svg") format("svg");
+}
+
+/* bolditalic */
+@font-face {
+  font-family: "Atkinson BoldItalic";
+  font-style: italic;
+  font-weight: bold;
+  src: url("../fonts/Atkinson-Hyperlegible-BoldItalic-102.eot");
+  src: url("../fonts/Atkinson-Hyperlegible-BoldItalic-102a.woff2")
+      format("woff2"),
+    url("../fonts/Atkinson-Hyperlegible-BoldItalic-102.woff") format("woff"),
+    url("../fonts/Atkinson-Hyperlegible-BoldItalic-102.ttf") format("truetype"),
+    url("../fonts/Atkinson-Hyperlegible-BoldItalic-102.svg") format("svg");
+}
+
+/* Download Montserrat in case it's still somewhere (?) */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
+/* HEX color notes for reference */
 /* Charcoal : #3E3C41
+Medium grey : #c2bfb8
 orange red: #E83825
 cream: #F7EEE0;  */
 
@@ -23,12 +66,18 @@ cream: #F7EEE0;  */
 
 body {
   background-color: #f7eee0;
-  font-family: "Atkinson";
+  font-family: "Atkinson Normal";
 }
 
 /* ================ Home page ================ */
 
 /* The 1 header */
+
+.the1 img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 section.header_lrg {
   background-color: #e83825;
   color: #3e3c41;
@@ -49,18 +98,14 @@ section.header_lrg {
   grid-column: 3;
   grid-row: 1;
   align-items: center;
-  font-family: "Montserrat";
+  font-family: "Atkinson normal";
   font-size: 200%;
   text-transform: uppercase;
-  /* align-self: center; */
 }
 
 nav.the1 a:link {
-  font-family: "Montserrat";
+  font-family: "Atkinson normal";
   font-size: 4000%;
-  font-weight: lighter;
-  text-transform: uppercase;
-  /* align-self: center; */
 }
 
 nav.the1 a:visited {
@@ -91,7 +136,7 @@ section.about {
   align-items: center;
   justify-content: center;
   padding: 1.5%;
-  font-family: "Montserrat";
+  font-family: "Atkinson normal";
 }
 
 nav.aboutLink a:link {
@@ -136,7 +181,7 @@ nav.aboutLink a.active {
   grid-column: 3;
   grid-row: 1;
   align-items: center;
-  font-family: "Montserrat";
+  font-family: "Atkinson Bold";
   font-size: 400%;
   text-transform: uppercase;
 }
@@ -154,7 +199,7 @@ nav.aboutNav a:link {
   font-size: 175%;
   padding: 1.5%;
   text-decoration: none;
-  font-family: "Montserrat";
+  font-family: "Atkinson bold";
   background-color: #e83825;
   color: #3e3c41;
 }
@@ -180,7 +225,7 @@ nav.aboutNav a.active {
 /* ===========About WHY it's done post-nav ============== */
 
 section.title {
-  font-family: "Montserrat";
+  font-family: "Atkinson bold";
   color: #3e3c41;
   padding: 5%;
   font-size: 200%;
@@ -198,7 +243,7 @@ section.essay {
 }
 article {
   color: #3e3c41;
-  font-family: "Atkinson";
+  font-family: "Atkinson normal";
 }
 
 .a1 {
@@ -266,7 +311,7 @@ article {
   justify-content: center;
   align-content: center;
   text-align: center center;
-  font-family: "Atkinson";
+  font-family: "Atkinson Bold";
   font-size: 225%;
   padding: 4%;
   padding-top: 10%;
@@ -456,28 +501,95 @@ figure.moodboard {
 
 /* ============== Tiffany Morrison ======== */
 
-section.brief {
-  background-color: #3e3c41;
-  width: 100%;
-  height: 100vh;
-  padding: 5%;
-}
-
 .doc {
-  width: 40%;
-  display: flex;
-  /* transform: scale(70%); */
+  width: 250px;
+  height: 300px;
+  background: #c2bfb8;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 2px 2px 10px #333;
   transition: all 1s;
 }
 
-.img {
-  /* transform: scale(10%); */
+.brief h3 {
+  font-family: "Atkinson bold";
+  font-size: 30;
+  padding: 2%;
+  padding-top: 0%;
+  color: #3e3c41;
 }
 
-.button {
+.brief h4 {
+  font-family: "Atkinson bold";
+  font-size: 75%;
+  padding: 2.5%;
+  padding-top: 0%;
+  text-indent: 15px;
+  color: #e83825;
+}
+
+.brief h5 {
+  font-family: "Atkinson bold";
+  font-size: 25%;
+}
+article .entry {
+  font-family: "Atkinson normal";
+  font-size: 50%;
+  padding: 2.5%;
+  padding-top: 4%;
+  text-indent: 15px;
+  color: #3e3c41;
+}
+
+.brief figure {
+  max-height: 35em;
+  padding: 0px;
+}
+
+.brief figcaption {
+  padding: 0;
+  font-family: "Atkinson italic";
+  color: #3e3c41;
+  font-size: 25%;
+}
+
+.brief figure a.inlineLink:link {
+  font-family: "Atkinson bold";
+  text-decoration: none;
+  color: #e83825;
+  font-size: 25%;
+}
+.brief a.inlineLink:visited {
+  font-family: "Atkinson bold";
+  color: #e83825;
+  font-size: 25%;
+}
+.brief a.inlineLink:hover {
+  font-family: "Atkinson bold";
+  color: #e83825;
+  font-size: 25%;
+}
+.brief a.inlineLink:active {
+  font-family: "Atkinson bold";
+  color: #e83825;
+  font-size: 25%;
+}
+.brief a.inlineLink:link {
+  font-family: "Atkinson bold";
+  color: #e83825;
+  font-size: 25%;
+}
+
+.brief img {
+  max-width: 100%;
+}
+
+.doc a.fullArticle:link {
+  font-family: "Atkinson bold";
   z-index: 1;
   position: absolute;
-  width: 25%;
+  max-width: 70%;
+  font-size: 70%;
   display: flex;
   cursor: pointer;
   text-align: center;
@@ -485,81 +597,104 @@ section.brief {
   padding: 0.25em 0.5em;
   border-radius: 0.25em;
   transition: all 0.4s;
-  border: 2px solid #e83825;
+  border: 2px solid #3e3c41;
   color: #e83825;
   background-color: #3e3c41;
+  box-shadow: 0 0 0 0 ##e83825;
+  bottom: 4%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
-article.doc a:link {
+
+.doc a.fullArticle:visited {
   box-shadow: 0 0 0 0 #e83825;
   text-decoration: none;
   color: #e83825;
 }
-article.doc a:visited {
-  box-shadow: 0 0 0 0 #e83825;
-  text-decoration: none;
-  color: #e83825;
-}
-article.doc a:hover {
+.doc a.fullArticle:hover {
   box-shadow: 0 0.75em 0 0 #e83825;
   text-decoration: none;
 }
-article.doc a.active {
+.doc a.fullArticle.active {
   box-shadow: 0 0.75em 0 0 #e83825;
   text-decoration: none;
 }
 
 .d1 {
-  transform: rotate(25deg) translate(-50%, -50%);
+  height: 250px;
+  transform: rotate(-25deg);
   position: absolute;
-  left: 40%;
-  top: 45%;
-}
-
-.zoom {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(2, 2) rotate(0deg);
-}
-/* .d2 {
-  transform: rotate(25deg);
-  position: absolute;
-  left: 40%;
-  top: 15%;
-}
-.d3 {
-  transform: rotate(60deg);
-  position: absolute;
-  left: 15%;
-  top: 20%;
-}
-.d4 {
-  transform: rotate(-35);
-  position: absolute;
-  left: 70%;
+  left: 30%;
   top: 40%;
 }
-.d5 {
-  transform: rotate(-45deg);
+
+.d2 {
+  height: 375px;
+  width: 300px;
+  transform: rotate(45deg);
   position: absolute;
   left: 60%;
-  top: 15%;
+  top: 20%;
 }
+
+.d3 {
+  height: 375px;
+  width: 300px;
+  transform: rotate(-12deg);
+  position: absolute;
+  left: 15%;
+  top: 30%;
+}
+
+.d4 {
+  height: 375px;
+  width: 300px;
+  transform: rotate(-12deg);
+  position: absolute;
+  left: 30%;
+  top: 20%;
+}
+
+.d5 {
+  height: 200px;
+  width: 300px;
+  transform: rotate(60deg);
+  position: absolute;
+  left: 70%;
+  top: 65%;
+}
+
 .d6 {
-  transform: rotate(-16deg);
-  position: absolute;
-  left: 80%;
-  top: 75%;
-}
-.d7 {
-  transform: rotate(5deg);
-  position: absolute;
-  left: 35%;
-  top: 75%;
-}
-.d8 {
-  transform: rotate(29deg);
+  height: 250px;
+  width: 300px;
+  transform: rotate(-55deg);
   position: absolute;
   left: 20%;
   top: 60%;
-} */
+}
+
+.d7 {
+  height: 250px;
+  width: 300px;
+  transform: rotate(-25deg);
+  position: absolute;
+  left: 55%;
+  top: 70%;
+}
+
+.d8 {
+  height: 300px;
+  width: 250px;
+  transform: rotate(-25deg);
+  position: absolute;
+  left: 40%;
+  top: 65%;
+}
+.zoom {
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(3.5) rotate(0deg);
+}
