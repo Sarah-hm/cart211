@@ -500,7 +500,60 @@ figure.moodboard {
 }
 
 /* ============== Tiffany Morrison ======== */
+section.brief {
+  width: 100%;
+  height: 100vh;
+  background-color: #c2bfb8;
+  /* position: fixed; */
+  background: url(../images/openBriefBg.jpg) no-repeat fixed center center;
+  background-size: cover;
+}
 
+.callForAction nav {
+  width: 100%;
+  height: 100vh;
+  padding: 2%;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.callForAction nav a:link {
+  font-family: "Atkinson bold";
+  z-index: 1;
+  /* position: relative; */
+  max-width: 70%;
+  font-size: 200%;
+  /* display: flex; */
+  align-self: flex-end;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  transition: all 0.4s;
+  border: 5px solid #3e3c41;
+  color: #e83825;
+  background-color: #3e3c41;
+  box-shadow: 0 0 0 0 #e83825;
+  margin: 0 10px;
+}
+
+.callForAction nav a:visited {
+  box-shadow: 0 0 0 0 #e83825;
+  text-decoration: none;
+  color: #e83825;
+}
+.callForAction nav a:hover {
+  box-shadow: 0 0.75em 0 0 #e83825;
+  text-decoration: none;
+}
+.callForAction nav a.active {
+  box-shadow: 0 0.75em 0 0 #e83825;
+  text-decoration: none;
+}
+
+/* Every articles/pictures will look like: */
 .doc {
   width: 250px;
   height: 300px;
@@ -509,8 +562,28 @@ figure.moodboard {
   padding: 20px;
   box-shadow: 2px 2px 10px #333;
   transition: all 1s;
+  overflow: auto;
+  /* scroll: auto; */
 }
 
+/* Set scroll bar in case of overflow for docs*/
+.doc::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+.doc::-webkit-scrollbar-track {
+  background: #c2bfb8;
+}
+/* Handle */
+.doc::-webkit-scrollbar-thumb {
+  background: #c2bfb8;
+}
+/* Handle on hover */
+.doc::-webkit-scrollbar-thumb:hover {
+  background: #3e3c41;
+}
+
+/* Set title headings color, size, padding, ...  */
 .brief h3 {
   font-family: "Atkinson bold";
   font-size: 30;
@@ -532,27 +605,33 @@ figure.moodboard {
   font-family: "Atkinson bold";
   font-size: 25%;
 }
+
+/* set the text block characteristics */
 article .entry {
   font-family: "Atkinson normal";
   font-size: 50%;
   padding: 2.5%;
   padding-top: 4%;
-  text-indent: 15px;
+  line-height: 12px;
   color: #3e3c41;
 }
 
+.entry p {
+  margin-bottom: 10px;
+}
+
+/* Images, its caption and its inline text in citation */
 .brief figure {
   max-height: 35em;
   padding: 0px;
 }
-
 .brief figcaption {
   padding: 0;
   font-family: "Atkinson italic";
   color: #3e3c41;
   font-size: 25%;
 }
-
+/* How inline link on figurecaption will look like */
 .brief figure a.inlineLink:link {
   font-family: "Atkinson bold";
   text-decoration: none;
@@ -566,15 +645,11 @@ article .entry {
 }
 .brief a.inlineLink:hover {
   font-family: "Atkinson bold";
+  text-decoration: underline;
   color: #e83825;
   font-size: 25%;
 }
 .brief a.inlineLink:active {
-  font-family: "Atkinson bold";
-  color: #e83825;
-  font-size: 25%;
-}
-.brief a.inlineLink:link {
   font-family: "Atkinson bold";
   color: #e83825;
   font-size: 25%;
@@ -587,7 +662,7 @@ article .entry {
 .doc a.fullArticle:link {
   font-family: "Atkinson bold";
   z-index: 1;
-  position: absolute;
+  position: relative;
   max-width: 70%;
   font-size: 70%;
   display: flex;
@@ -601,10 +676,11 @@ article .entry {
   color: #e83825;
   background-color: #3e3c41;
   box-shadow: 0 0 0 0 ##e83825;
-  bottom: 4%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  /* bottom: 4%; */
+  /* left: 50%; */
+  /* margin-right: -50%; */
+  /* transform: translate(-50%, -50%); */
 }
 
 .doc a.fullArticle:visited {
@@ -691,6 +767,16 @@ article .entry {
   left: 40%;
   top: 65%;
 }
+
+.d9 {
+  height: 350px;
+  width: 300px;
+  transform: rotate(25deg);
+  position: absolute;
+  left: 50%;
+  top: 15%;
+}
+
 .zoom {
   z-index: 999;
   position: absolute;
