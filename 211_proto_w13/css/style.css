@@ -597,12 +597,12 @@ section.brief {
   font-size: 75%;
   padding: 2.5%;
   padding-top: 0%;
-  text-indent: 15px;
   color: #e83825;
 }
 
 .brief h5 {
   font-family: "Atkinson bold";
+  text-indent: 15px;
   font-size: 25%;
 }
 
@@ -777,10 +777,38 @@ article .entry {
   top: 15%;
 }
 
+.d10 {
+  height: 250px;
+  width: 300px;
+  transform: rotate(12deg);
+  position: absolute;
+  left: 75%;
+  top: 40%;
+}
+
+.d11 {
+  height: 300px;
+  width: 200px;
+  transform: rotate(5deg);
+  position: absolute;
+  left: 15%;
+  top: 70%;
+}
+
+.d12 {
+  height: 200px;
+  width: 300px;
+  transform: rotate(-7deg);
+  position: absolute;
+  left: 10%;
+  top: 55%;
+}
+
 .zoom {
+  max-height: 90vh;
   z-index: 999;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(3.5) rotate(0deg);
+  transform: translate(-50%, -50%) scale(2.5) rotate(0deg);
 }
