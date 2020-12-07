@@ -1,5 +1,19 @@
-//How to put html pages in array and make a random link selector with the front page logo?
+const trig = document.querySelector('.trigger');
+const closer = document.querySelector('.close');
 
+trig.addEventListener('click', openNav);
+closer.addEventListener('click', closeNav);
+
+function openNav() {
+  document.getElementById("stylesheet").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("stylesheet").style.height = "0%";
+}
+
+
+//How to put html pages in array and make a random link selector with the front page logo?
 
 const dossier = document.querySelectorAll('.doc');
 let docMoved = true;

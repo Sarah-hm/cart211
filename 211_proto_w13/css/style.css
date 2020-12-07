@@ -94,15 +94,6 @@ section.header_lrg {
   align-items: baseline;
 }
 
-.header_lrg h1 {
-  grid-column: 3;
-  grid-row: 1;
-  align-items: center;
-  font-family: "Atkinson normal";
-  font-size: 200%;
-  text-transform: uppercase;
-}
-
 nav.the1 a:link {
   font-family: "Atkinson normal";
   font-size: 4000%;
@@ -123,11 +114,11 @@ nav.the1 a:link {
   text-decoration: none;
 }
 
-/* About section */
+/* About 'invisible' nav section on Index page*/
 
 section.about {
   height: 10vh;
-  font-size: 300%;
+  font-size: 500%;
   text-transform: uppercase;
   font-weight: bold;
   background-color: #e83825;
@@ -136,7 +127,7 @@ section.about {
   align-items: center;
   justify-content: center;
   padding: 1.5%;
-  font-family: "Atkinson normal";
+  font-family: "Atkinson bold";
 }
 
 nav.aboutLink a:link {
@@ -156,7 +147,7 @@ section.about:hover {
 nav.aboutLink a:hover {
   transition: 2s;
   text-decoration: none;
-  background-color: #3e3c41;
+  background-color: none;
   color: #e83825;
 }
 nav.aboutLink a.active {
@@ -170,9 +161,10 @@ nav.aboutLink a.active {
   background-color: #e83825;
   color: #3e3c41;
   width: 100%;
-  height: 25vh;
+  height: 20vh;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -181,9 +173,26 @@ nav.aboutLink a.active {
   grid-column: 3;
   grid-row: 1;
   align-items: center;
-  font-family: "Atkinson Bold";
-  font-size: 400%;
+  font-family: "Atkinson bold";
+  font-size: 500%;
   text-transform: uppercase;
+}
+
+.header_medium a:link {
+  font-family: "Atkinson bold";
+  position: fixed;
+  top: 2%;
+  left: 2%;
+  align-items: center;
+  font-size: 175%;
+  color: #3e3c41;
+  text-decoration: none;
+}
+.header_medium a:visited {
+  color: #3e3c41;
+}
+
+.header_medium a:hover {
 }
 
 nav.aboutNav {
@@ -196,7 +205,7 @@ nav.aboutNav a:link {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  font-size: 175%;
+  font-size: 300%;
   padding: 1.5%;
   text-decoration: none;
   font-family: "Atkinson bold";
@@ -224,15 +233,7 @@ nav.aboutNav a.active {
 }
 /* ===========About WHY it's done post-nav ============== */
 
-section.title {
-  font-family: "Atkinson bold";
-  color: #3e3c41;
-  padding: 5%;
-  font-size: 200%;
-  letter-spacing: 2px;
-}
-
-section.essay {
+section.whyItsDone {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -241,9 +242,40 @@ section.essay {
   padding-bottom: 3%;
   line-height: 25px;
 }
-article {
+
+.whyItsDone article.title {
+  color: #e83825;
+  font-family: "Atkinson bold";
+  font-size: 200%;
+}
+
+.whyItsDone article.essay {
   color: #3e3c41;
   font-family: "Atkinson normal";
+  font-size: 150%;
+}
+
+.whyItsDone article.essay p {
+  line-height: 150%;
+  margin-bottom: 50px;
+}
+
+.whyItsDone article.essay a:link {
+  font-family: "Atkinson bold";
+  text-decoration: none;
+  color: #e83825;
+}
+
+.whyItsDone article.essay a:visited {
+  font-family: "Atkinson bold";
+  text-decoration: none;
+  color: #e83825;
+}
+
+.whyItsDone article.essay a:hover {
+  font-family: "Atkinson bold";
+  text-decoration: none;
+  color: #e83825;
 }
 
 .a1 {
@@ -304,7 +336,7 @@ article {
 }
 
 /* Pdf version button */
-.a9 {
+.pdfButton {
   grid-column: 4/6;
   grid-row: 12;
   display: flex;
@@ -323,22 +355,29 @@ article {
   color: #e83825;
 }
 
-nav.a9 a:link {
+nav.pdfButton a:link {
   text-decoration: none;
   color: #e83825;
 }
-nav.a9 a:visited {
+nav.pdfButton a:visited {
   text-decoration: none;
   color: #e83825;
 }
-nav.a9 a:hover {
+nav.pdfButton a:hover {
   text-decoration: none;
 }
-nav.a9 a.active {
+nav.pdfButton a.active {
   text-decoration: none;
 }
 
 /* ===========About HOW it's done post-nav ============== */
+
+nav .howItsDone {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 section.wireframe {
   width: 100%;
@@ -724,7 +763,7 @@ article .entry {
 }
 
 .d4 {
-  height: 375px;
+  height: 350px;
   width: 300px;
   transform: rotate(-12deg);
   position: absolute;
