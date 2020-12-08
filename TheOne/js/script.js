@@ -9,7 +9,6 @@ dossier.forEach(function(c) {
   console.log(c);
   c.addEventListener('click', function() {
     reset();
-    unzoom();
     this.classList.toggle("zoom");
     //make everything zoom out
   });

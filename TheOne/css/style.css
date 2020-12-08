@@ -462,7 +462,7 @@ article.caseInfo {
   /* width: 550px;
   height: 350px; */
   max-width: 25%;
-  max-height: 35%;
+  min-height: 35%;
   background-color: #c2bfb8;
   right: 50%;
   bottom: 25%;
