@@ -462,11 +462,12 @@ article.caseInfo {
   /* width: 550px;
   height: 350px; */
   max-width: 25%;
-  min-height: 35%;
+  min-height: 10%;
+  max-height: 40%;
   background-color: #c2bfb8;
   right: 50%;
-  bottom: 25%;
-  transform: translate(50%, 0);
+  bottom: 15%;
+  transform: translate(50%, 0%);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 1.5fr 2fr 1fr;
