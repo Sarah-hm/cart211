@@ -447,7 +447,27 @@ nav.pdfButton a.active {
   max-height: 100%;
 }
 
-/* ============== Tiffany Morrison ======== */
+/* ============== OCLOSED BRIEF PAGE ========  */
+section.closedBrief {
+  width: 100%;
+  height: 100vh;
+  background-color: #c2bfb8;
+  /* position: fixed; */
+  background: url(../images/closeBriefBg.jpg) no-repeat fixed center center;
+  background-size: cover;
+}
+
+article.caseInfo {
+  position: absolute;
+  width: 550px;
+  height: 350px;
+  background-color: #c2bfb8;
+  right: 50%;
+  bottom: 32%;
+  transform: translate(50%, 0);
+}
+
+/* ============== OPEN BRIEF PAGE ======== */
 section.brief {
   width: 100%;
   height: 100vh;
