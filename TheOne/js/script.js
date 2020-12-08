@@ -1,24 +1,25 @@
-//How to put html pages in array and make a random link selector with the front page logo?
-
 // -------- Zoom in / out on brief pages ----------
 
 const dossier = document.querySelectorAll('.doc');
 let docMoved = true;
 
 
-// How to put docs in an array to make it possible to zoom out of them when click on
-let docs = ["d1", "d2", "d3", "d4", "d5", "d6", "d7", "d8"]
-
 // console.log(dossier);
 dossier.forEach(function(c) {
   console.log(c);
   c.addEventListener('click', function() {
-
+    reset();
+    unzoom();
     this.classList.toggle("zoom");
     //make everything zoom out
   });
 });
 
+function reset() {
+  dossier.forEach(function(c) {
+    c.classList.remove('zoom');
+  });
+}
 
 
 // =========== HOW IT's DONE page opennable sections =========

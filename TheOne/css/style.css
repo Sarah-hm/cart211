@@ -413,24 +413,36 @@ nav.pdfButton a.active {
   z-index: 11;
   bottom: 0;
   left: 0;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: #f7eee0;
   overflow-x: hidden;
   transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.overlay article {
+  height: 5%;
+  padding: 1%;
+  font-family: "Atkinson bold";
+  color: #e83825;
+  font-size: 200%;
 }
 
 .overlay-content {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 95%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background-color: #f7eee0;
   flex-flow: row wrap;
 }
 
-.overlay-content img {
+.overlay-content img,
+.overlay-content video {
   max-width: 100%;
   max-height: 100%;
 }
