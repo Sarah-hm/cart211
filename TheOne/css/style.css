@@ -489,7 +489,7 @@ article.caseInfo {
   grid-row: 1;
   color: #3e3c41;
   font-family: "Atkinson bold";
-  font-size: 250%;
+  font-size: 200%;
 }
 
 .caseInfo div.personalFacts {
@@ -497,7 +497,7 @@ article.caseInfo {
   grid-row: 2;
   color: #e83825;
   font-family: "Atkinson normal";
-  font-size: 150%;
+  font-size: 125%;
 }
 
 .caseInfo div.caseFacts {
@@ -506,7 +506,7 @@ article.caseInfo {
   grid-row: 3;
   color: #3e3c41;
   font-family: "Atkinson normal";
-  font-size: 150%;
+  font-size: 125%;
 }
 
 .caseInfo div.triggerWarning {
@@ -514,7 +514,7 @@ article.caseInfo {
   grid-row: 4;
   font-family: "Atkinson boldItalic";
   color: #3e3c41;
-  font-size: 100%;
+  font-size: 75%;
   display: flex;
   align-items: flex-end;
 }
@@ -524,7 +524,7 @@ article.caseInfo {
   grid-row: 4;
   color: #3e3c41;
   font-family: "Atkinson boldItalic";
-  font-size: 100%;
+  font-size: 75%;
   text-align: right;
   display: flex;
   align-items: flex-end;
