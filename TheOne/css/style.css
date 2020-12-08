@@ -602,6 +602,36 @@ section.brief {
   /* scroll: auto; */
 }
 
+/* Set the close button on all articles and pictures */
+.closebtn {
+  position: fixed;
+  z-index: 99;
+  top: 25px;
+  right: 25px;
+  font-size: 200%;
+  line-height: auto;
+  text-align: right;
+  cursor: pointer;
+  padding: 8px;
+  text-decoration: none;
+  font-family: "Atkinson bold";
+  transition: all 0.5s;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  border: 2px solid #3e3c41;
+  color: #e83825;
+  background-color: #3e3c41;
+  box-shadow: 0 0 0 0 ##e83825;
+  margin: 0 auto;
+}
+
+.closebtn:hover {
+  color: #3e3c41;
+  background-color: #e83825;
+}
+
 /* Set scroll bar in case of overflow for docs*/
 .doc::-webkit-scrollbar {
   width: 5px;

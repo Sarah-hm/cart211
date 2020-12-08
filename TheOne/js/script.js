@@ -1,15 +1,25 @@
 // -------- Zoom in / out on brief pages ----------
 
+const closeDoc = document.querySelectorAll('.closebtn')
 const dossier = document.querySelectorAll('.doc');
-let docMoved = true;
 
+let zoomed = false;
+
+closeDoc.forEach(function(c) {
+  // console.log(c);
+  c.addEventListener('click', function() {
+    unzoom();
+  });
+});
 
 // console.log(dossier);
 dossier.forEach(function(c) {
-  console.log(c);
+  // console.log(c);
   c.addEventListener('click', function() {
     reset();
     this.classList.toggle("zoom");
+    let zoomed = true;
+    console.log(zoomed)
     //make everything zoom out
   });
 });
@@ -17,6 +27,17 @@ dossier.forEach(function(c) {
 function reset() {
   dossier.forEach(function(c) {
     c.classList.remove('zoom');
+    console.log(c);
+  });
+}
+
+function unzoom() {
+
+  dossier.forEach(function(c) {
+    closeDoc.forEach(function(d) {
+      c.classList.remove('zoom');
+    })
+    // console.log(c);
   });
 }
 
