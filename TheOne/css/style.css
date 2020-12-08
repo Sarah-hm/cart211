@@ -38,7 +38,7 @@
 
 /* bolditalic */
 @font-face {
-  font-family: "Atkinson BoldItalic";
+  font-family: "Atkinson boldItalic";
   font-style: italic;
   font-weight: bold;
   src: url("../fonts/Atkinson-Hyperlegible-BoldItalic-102.eot");
@@ -459,12 +459,75 @@ section.closedBrief {
 
 article.caseInfo {
   position: absolute;
-  width: 550px;
-  height: 350px;
+  /* width: 550px;
+  height: 350px; */
+  max-width: 25%;
+  max-height: 35%;
   background-color: #c2bfb8;
   right: 50%;
-  bottom: 32%;
+  bottom: 25%;
   transform: translate(50%, 0);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1.5fr 2fr 1fr;
+  padding: 1%;
+  grid-gap: 20px;
+}
+
+.caseInfo div.figure {
+  grid-column: 1;
+  grid-row: 1/3;
+}
+
+.caseInfo div.figure img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.caseInfo div.name {
+  grid-column: 2/4;
+  grid-row: 1;
+  color: #3e3c41;
+  font-family: "Atkinson bold";
+  font-size: 250%;
+}
+
+.caseInfo div.personalFacts {
+  grid-column: 2/4;
+  grid-row: 2;
+  color: #e83825;
+  font-family: "Atkinson normal";
+  font-size: 150%;
+}
+
+.caseInfo div.caseFacts {
+  padding: 1%;
+  grid-column: 1/4;
+  grid-row: 3;
+  color: #3e3c41;
+  font-family: "Atkinson normal";
+  font-size: 150%;
+}
+
+.caseInfo div.triggerWarning {
+  grid-column: 1/3;
+  grid-row: 4;
+  font-family: "Atkinson boldItalic";
+  color: #3e3c41;
+  font-size: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.caseInfo div.agentWendigo {
+  grid-column: 3;
+  grid-row: 4;
+  color: #3e3c41;
+  font-family: "Atkinson boldItalic";
+  font-size: 100%;
+  text-align: right;
+  display: flex;
+  align-items: flex-end;
 }
 
 /* ============== OPEN BRIEF PAGE ======== */
