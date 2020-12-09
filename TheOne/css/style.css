@@ -766,34 +766,35 @@ article .entry {
 }
 
 .d1 {
-  height: 250px;
+  height: 25vh;
+  width: 15vw;
   transform: rotate(-25deg);
   position: absolute;
-  left: 30%;
-  top: 40%;
+  left: 30vw;
+  top: 40vh;
 }
 
 .d2 {
-  height: 375px;
-  width: 300px;
+  height: 30vh;
+  width: 15vw;
   transform: rotate(45deg);
   position: absolute;
-  left: 60%;
-  top: 20%;
+  left: 60vw;
+  top: 20vh;
 }
 
 .d3 {
-  height: 375px;
-  width: 300px;
+  height: 30vh;
+  width: 15vw;
   transform: rotate(-12deg);
   position: absolute;
-  left: 15%;
-  top: 30%;
+  left: 10vw;
+  top: 30vh;
 }
 
 .d4 {
-  height: 350px;
-  width: 300px;
+  height: 30vh;
+  width: 17vw;
   transform: rotate(-12deg);
   position: absolute;
   left: 30%;
@@ -801,12 +802,12 @@ article .entry {
 }
 
 .d5 {
-  height: 200px;
-  width: 300px;
+  height: 20vh;
+  width: 20vw;
   transform: rotate(60deg);
   position: absolute;
-  left: 70%;
-  top: 65%;
+  left: 70vw;
+  top: 65vh;
 }
 
 .d6 {
@@ -833,7 +834,7 @@ article .entry {
   transform: rotate(-25deg);
   position: absolute;
   left: 40%;
-  top: 65%;
+  top: 60vh;
 }
 
 .d9 {
@@ -846,34 +847,34 @@ article .entry {
 }
 
 .d10 {
-  height: 250px;
-  width: 300px;
+  height: 25vh;
+  width: 20vw;
   transform: rotate(12deg);
   position: absolute;
-  left: 75%;
-  top: 40%;
+  left: 75vw;
+  top: 40vh;
 }
 
 .d11 {
-  height: 300px;
-  width: 200px;
+  height: 25vh;
+  width: 12.5vw;
   transform: rotate(5deg);
   position: absolute;
-  left: 15%;
-  top: 70%;
+  left: 10vw;
+  top: 60vh;
 }
 
 .d12 {
-  height: 200px;
-  width: 300px;
+  height: 20vh;
+  width: 17vw;
   transform: rotate(-7deg);
   position: absolute;
-  left: 10%;
-  top: 55%;
+  left: 10vw;
+  top: 15vh;
 }
 
 .zoom {
-  max-height: 90vh;
+  max-height: 80vh;
   z-index: 999;
   position: absolute;
   top: 50%;
