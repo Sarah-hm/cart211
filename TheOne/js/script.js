@@ -1,32 +1,32 @@
 // -------- Zoom in / out on brief pages ----------
 
-const closeDoc = document.querySelectorAll('.closebtn')
-const dossier = document.querySelectorAll('.doc');
-
-closeDoc.forEach(function(c) {
-  // console.log(c);
-  c.addEventListener('click', function() {
-    reset();
-  });
-});
+const closeDoc = document.querySelectorAll(".closebtn");
+const dossier = document.querySelectorAll(".doc");
 
 // console.log(dossier);
 dossier.forEach(function(c) {
   // console.log(c);
-  c.addEventListener('click', function() {
+  c.addEventListener("click", function() {
     reset();
     this.classList.toggle("zoom");
   });
 });
 
+closeDoc.forEach(function(c) {
+  // console.log(c);
+  c.addEventListener("click", function() {
+    reset();
+    this.classList.remove("zoom");
+    console.log(dossier);
+  });
+});
+
 function reset() {
   dossier.forEach(function(c) {
-    c.classList.remove('zoom');
-    console.log(c);
+    c.classList.remove("zoom");
+    // console.log(c);
   });
 }
-
-
 
 // =========== HOW IT's DONE page opennable sections =========
 // This code is based from the 'eventlist' files from root_day_9 shown in class
@@ -76,7 +76,6 @@ function openPrototype() {
 function closePrototype() {
   document.getElementById("prototypeSec").style.height = "0%";
 }
-
 
 //Mobile sketches opening
 const trigMobile = document.querySelector("#mobile");

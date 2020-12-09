@@ -624,8 +624,6 @@ div.callAction a:visited {
 
 /* Every articles/pictures will look like: */
 .doc {
-  width: 250px;
-  height: 300px;
   background: #c2bfb8;
   margin: 20px;
   padding: 20px;
@@ -634,7 +632,7 @@ div.callAction a:visited {
   overflow: auto;
 }
 
-/* .closebtn {
+.closebtn {
   position: fixed;
   z-index: 99;
   top: 25px;
@@ -661,7 +659,7 @@ div.callAction a:visited {
 .closebtn:hover {
   color: #3e3c41;
   background-color: #e83825;
-} */
+}
 
 /* Set scroll bar in case of overflow for docs*/
 .doc::-webkit-scrollbar {
@@ -854,21 +852,21 @@ article .entry {
 }
 
 .d8 {
-  height: 300px;
-  width: 250px;
+  height: 32vh;
+  width: 15vw;
   transform: rotate(-25deg);
   position: absolute;
-  left: 40%;
+  left: 40vw;
   top: 60vh;
 }
 
 .d9 {
-  height: 350px;
-  width: 300px;
+  height: 35vh;
+  width: 17vw;
   transform: rotate(25deg);
   position: absolute;
-  left: 50%;
-  top: 15%;
+  left: 50vw;
+  top: 15vh;
 }
 
 .d10 {
@@ -900,7 +898,7 @@ article .entry {
 
 .zoom {
   max-height: 80vh;
-  z-index: 998;
+  z-index: 500;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -908,7 +906,7 @@ article .entry {
 }
 
 /* Set the close button on all articles and pictures */
-.closebtn {
+/* .closebtn {
   position: fixed;
   z-index: 999;
   top: 1vh;
@@ -927,4 +925,4 @@ article .entry {
 
 .closebtn:hover {
   color: #e83825;
-}
+} */
