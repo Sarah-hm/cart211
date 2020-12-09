@@ -49,6 +49,9 @@
     url("../fonts/Atkinson-Hyperlegible-BoldItalic-102.svg") format("svg");
 }
 
+/* Permanent market font */
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
 /* Download Montserrat in case it's still somewhere (?) */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
 
@@ -560,6 +563,65 @@ section.brief {
   background-size: cover;
 }
 
+div.callAction {
+  z-index: 5;
+  height: 15vh;
+  width: 15vh;
+  background-color: #ffdd15;
+  transition: all 1s;
+  box-shadow: 2px 2px 10px #333;
+  font-family: "Permanent Marker";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  font-size: 1.5vh;
+}
+
+div.callAction:hover {
+  transform: rotate(-7deg) scale(1.5);
+  box-shadow: 4px 4px 15px #333;
+  z-index: 6;
+}
+
+div.callAction a:link {
+  color: #3e3c41;
+  text-decoration: none;
+}
+
+div.callAction a:visited {
+  color: #3e3c41;
+  text-decoration: none;
+}
+
+.ca1 {
+  position: absolute;
+  top: 7vh;
+  left: 5vw;
+  transform: rotate(25deg);
+}
+
+.ca2 {
+  position: absolute;
+  top: 22vh;
+  left: 2.5vw;
+  transform: rotate(-30deg);
+}
+
+.ca3 {
+  position: absolute;
+  top: 40vh;
+  left: 4vw;
+  transform: rotate(17deg);
+}
+
+.ca4 {
+  position: absolute;
+  top: 57vh;
+  left: 5vw;
+  transform: rotate(-22deg);
+}
+
 div.callForAction {
   width: 100%;
   max-height: 20vh;
@@ -620,7 +682,6 @@ div.callForAction {
   box-shadow: 2px 2px 10px #333;
   transition: all 1s;
   overflow: auto;
-  /* scroll: auto; */
 }
 
 /* Set the close button on all articles and pictures */
