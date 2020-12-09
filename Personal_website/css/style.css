@@ -19,7 +19,7 @@ section.header_lrg {
   background-color: #a7c9c7;
   color: #1e144b;
   width: 100%;
-  height: 50vh;
+  height: 25vh;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -125,6 +125,7 @@ nav.buttonNav {
   display: inline-flex;
   justify-content: space-between;
   text-align: center;
+  justify-content: center;
 }
 
 nav.buttonNav a:link {
@@ -144,13 +145,14 @@ nav.buttonNav a:link {
   box-shadow: 5px 6px #808080;
 }
 
-nav.buttonNav a:hover {
-  background-color: #a7c9c7;
-  color: #1e144b;
-}
 nav.buttonNav a:visited {
   color: #fbf5e6;
   background-color: #1e144b;
+}
+
+nav.buttonNav a:hover {
+  background-color: #a7c9c7;
+  color: #1e144b;
 }
 
 nav.buttonNav a.active {
