@@ -622,56 +622,6 @@ div.callAction a:visited {
   transform: rotate(-22deg);
 }
 
-div.callForAction {
-  width: 100%;
-  max-height: 20vh;
-  position: absolute;
-  bottom: 10px;
-  display: flex;
-  align-items: flex-end;
-}
-
-.callForAction nav {
-  padding: 2%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.callForAction nav a:link {
-  font-family: "Atkinson bold";
-  z-index: 1;
-  /* position: relative; */
-  max-width: 70%;
-  font-size: 3vh;
-  /* display: flex; */
-  align-items: flex-end;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  padding: 0.5em;
-  border-radius: 0.25em;
-  transition: all 0.4s;
-  border: 5px solid #3e3c41;
-  color: #e83825;
-  background-color: #3e3c41;
-  box-shadow: 0 0 0 0 #e83825;
-  margin: 0 10px;
-}
-
-.callForAction nav a:visited {
-  box-shadow: 0 0 0 0 #e83825;
-  text-decoration: none;
-  color: #e83825;
-}
-.callForAction nav a:hover {
-  box-shadow: 0 0.75em 0 0 #e83825;
-  text-decoration: none;
-}
-.callForAction nav a.active {
-  box-shadow: 0 0.75em 0 0 #e83825;
-  text-decoration: none;
-}
-
 /* Every articles/pictures will look like: */
 .doc {
   width: 250px;
@@ -684,8 +634,7 @@ div.callForAction {
   overflow: auto;
 }
 
-/* Set the close button on all articles and pictures */
-.closebtn {
+/* .closebtn {
   position: fixed;
   z-index: 99;
   top: 25px;
@@ -712,7 +661,7 @@ div.callForAction {
 .closebtn:hover {
   color: #3e3c41;
   background-color: #e83825;
-}
+} */
 
 /* Set scroll bar in case of overflow for docs*/
 .doc::-webkit-scrollbar {
@@ -951,9 +900,31 @@ article .entry {
 
 .zoom {
   max-height: 80vh;
-  z-index: 999;
+  z-index: 998;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(2.5) rotate(0deg);
+}
+
+/* Set the close button on all articles and pictures */
+.closebtn {
+  position: fixed;
+  z-index: 999;
+  top: 1vh;
+  right: 1vw;
+  font-size: 150%;
+  line-height: auto;
+  text-align: right;
+  cursor: pointer;
+  padding: 8px;
+  text-decoration: none;
+  font-family: "Atkinson bold";
+  transition: all 0.5s;
+  text-transform: uppercase;
+  color: #3e3c41;
+}
+
+.closebtn:hover {
+  color: #e83825;
 }

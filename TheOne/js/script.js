@@ -3,12 +3,10 @@
 const closeDoc = document.querySelectorAll('.closebtn')
 const dossier = document.querySelectorAll('.doc');
 
-let zoomed = false;
-
 closeDoc.forEach(function(c) {
   // console.log(c);
   c.addEventListener('click', function() {
-    unzoom();
+    reset();
   });
 });
 
@@ -18,9 +16,6 @@ dossier.forEach(function(c) {
   c.addEventListener('click', function() {
     reset();
     this.classList.toggle("zoom");
-    let zoomed = true;
-    console.log(zoomed)
-    //make everything zoom out
   });
 });
 
@@ -31,15 +26,6 @@ function reset() {
   });
 }
 
-function unzoom() {
-
-  dossier.forEach(function(c) {
-    closeDoc.forEach(function(d) {
-      c.classList.remove('zoom');
-    })
-    // console.log(c);
-  });
-}
 
 
 // =========== HOW IT's DONE page opennable sections =========
